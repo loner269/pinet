@@ -50,7 +50,7 @@
 
   .mainBtn {
     height: 30px;
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
 
   .mainBtn a {
     color: #f4af47;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
   }
 
