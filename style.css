@@ -89,10 +89,13 @@
   
   margin-bottom: 10px;
 }
-.foot div h1{
+.foot div h4{
 text-align: center;
 }
-
+.foot div p {
+  font-size: 0.8em;
+  /* text-align: center; */
+}
 header .logo {
     width: 60%;
   }
@@ -339,7 +342,7 @@ margin-top: 20%;
   
   margin-bottom: 20px;
 }
-.foot div h1{
+.foot div h4{
 text-align: center;
 }
 
