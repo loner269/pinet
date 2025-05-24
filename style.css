@@ -6,7 +6,8 @@
   }
 
   .body {
-    background-color: #8a348e;
+    /* background-color: #8a348e; */
+    background-color: rgb(85, 14, 85);
     color: #fff;
   }
 
@@ -15,7 +16,8 @@
   }
 
   .header {
-    background-color: purple;
+    background-color: rgb(73, 8, 73);
+    padding: 10px;
   }
 
   .img {
@@ -29,11 +31,13 @@
     justify-content: center;
     padding-left: 3%;
     padding-top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
   }
   .main h1 {
-    margin-bottom: 10%;
-    font-weight: 900;
-    font-size: 2em;
+    margin-bottom: 5%;
+    font-weight: bolder;
+    font-size: 1.7em;
     width: 90%;
   }
 
@@ -45,7 +49,6 @@
 
 
   .mainBtn {
-    background-color: #8a348e;
     height: 30px;
     width: 55%;
     display: flex;
@@ -53,18 +56,18 @@
     align-items: center;
     border: #f4af47 2px solid;
     padding: 25px 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .mainBtn a {
     color: #f4af47;
-    font-size: medium;
+    font-size: 15px;
     font-weight: 600;
   }
 
   .video {
     margin-top: 10px;
-    margin-bottom: -70px;
+    margin-bottom: -120px;
   }
 
   iframe {
@@ -251,12 +254,12 @@ header .logo {
 }
 
 .body {
-  background-color: #8a348e;
+  background-color: rgb(85, 14, 85);
   color: #fff;
 }
 
 .header {
-  background-color: purple;
+  background-color: rgb(73, 8, 73);
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -273,6 +276,7 @@ a {
   justify-content: center;
   padding-left: 3%;
   padding-top: 5%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main h1 {
@@ -288,7 +292,6 @@ a {
   width: 90%;
 }
 .mainBtn {
-  background-color: #8a348e;
   height: 30px;
   width: 30%;
   display: flex;
