@@ -200,7 +200,7 @@ header .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #8a348e;
     color: #fff;
     position: static;
@@ -268,7 +268,7 @@ header .logo {
     margin-bottom: 400px;
   }
   .warn{
-    font-size: 0.2em;
+    font-size: 0.1em;
     text-align: center;
   }
 
