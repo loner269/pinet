@@ -107,7 +107,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- padding: 40px 10px;
+ padding: 20px 10px;
  margin-top: 40%;
  margin-bottom: 0px;
 }
@@ -205,7 +205,7 @@ header .logo {
     color: #fff;
     position: static;
   }
- header div h1 i{
+ header div h3 i{
   width: 30px;
   height: 30px;}
 
@@ -268,7 +268,7 @@ header .logo {
     margin-bottom: 400px;
   }
   .warn{
-    font-size: 0.3em;
+    font-size: 0.2em;
     text-align: center;
   }
 
