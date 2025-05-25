@@ -32,7 +32,7 @@
     padding-left: 3%;
     padding-top: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+   margin-bottom: -140px;
   }
   .main h1 {
     margin-bottom: 5%;
@@ -67,20 +67,46 @@
 
   .video {
     margin-top: 10px;
-    margin-bottom: -120px;
+    
   }
 
   iframe {
     border: none;
-    width: 96%;
+    width: 100%;
     height: 200px;
   }
+  
+ .glass {
+  background-color: rgba(85, 14, 85, 0.5);
+  -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.glass2 {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #fff;
+  padding: 2rem;
+}
+.glass3{
+  background-color:#b972bd;
+  color: #fff;
+}
   .foot{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- background-color: #292525;
  padding: 40px 10px;
  margin-top: 40%;
  margin-bottom: 0px;
@@ -94,7 +120,9 @@ text-align: center;
 }
 .foot div p {
   font-size: 0.8em;
-  /* text-align: center; */
+}
+li{
+  font-size: 0.8em;
 }
 header .logo {
     width: 60%;
@@ -280,6 +308,7 @@ a {
   padding-left: 3%;
   padding-top: 5%;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: -170px;
 }
 
 .main h1 {
@@ -315,12 +344,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   
-}
-
-
-.video {
-  
-  margin-bottom: -70px;
 }
 
 iframe {
@@ -489,3 +512,12 @@ header {
   font-size: 0.5em;
 }
 }
+
+.body {
+  background: linear-gradient(135deg, #550e55, #8a348e);
+  min-height: 100vh;
+  color: white;
+  font-family: Georgia, serif;
+}
+
+
